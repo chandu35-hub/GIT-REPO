@@ -1,0 +1,163 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+header {
+    background: linear-gradient(to right, #343a40, #007bff);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.user-input, .user-details, .repos-section, .pagination {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.user-details {
+    width: 100%;
+    background-color: #eaf0f6;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.users {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row
+}
+
+.user-info img {
+    margin-right: 20px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 60%;
+}
+
+.user-info a {
+    border-radius: 10px;
+    border-color: #fff;
+    background-color: rgb(199, 224, 199);
+    text-align: left;
+}
+
+
+
+
+.repos-section {
+    width: 48%;
+    
+}
+
+.repos-list {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    
+}
+
+.repoItem {
+    width: 48%;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    background-color: #eaf0f6;
+    
+
+    @media (max-width: 768px) {
+            width: 100%;
+            /* Change the width for smaller screens */
+    }
+}
+
+.repoItem:hover {
+    transform: scale(1.05);
+}
+
+.repoItem a {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    
+}
+
+.repoItem p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.repo-button {
+    display: flex;
+    justify-self: left;
+    background-color: #28a745;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20vh;
+    height: 30
+}
+
+.repo-button:hover {
+    background-color: #218838;
+}
+
